@@ -1,7 +1,5 @@
-" tir_black color scheme
-" Based on ir_black from: http://blog.infinitered.com/entries/show/8
-" adds 256 color console support
-" changed WildMenu color to be the same as PMenuSel
+" black_is_the_color
+" Based on tir_black
 
 set background=dark
 hi clear
@@ -10,17 +8,15 @@ if exists("syntax_on")
  syntax reset
 endif
 
-let colors_name = "tir_black"
+let colors_name = "black_is_the_color"
 
 " General colors
-"hi Normal guifg=#f6f3e8 guibg=black ctermfg=white ctermbg=0
-"hi Normal guifg=#f6f3e8 guibg=gray10 ctermfg=white ctermbg=0
-hi Normal guifg=gray80 guibg=gray10 ctermfg=white ctermbg=0
-hi NonText guifg=#070707 guibg=black ctermfg=232 ctermbg=0
+hi Normal guifg=gray80 guibg=black ctermfg=white
+hi NonText guifg=#070707 guibg=black ctermfg=232
 
 "hi Cursor guifg=black guibg=white ctermfg=0 ctermbg=15
 hi Cursor guifg=black guibg=#CEF951 ctermfg=0 ctermbg=15
-hi LineNr guifg=#3D3D3D guibg=black ctermfg=239 ctermbg=0
+hi LineNr guifg=#3D3D3D guibg=black ctermfg=239
 
 hi VertSplit guifg=#202020 guibg=#202020 ctermfg=235 ctermbg=235
 hi StatusLine guifg=#CCCCCC guibg=#202020 gui=italic ctermfg=235 ctermbg=white
@@ -42,7 +38,6 @@ hi WarningMsg guifg=white guibg=#FF6C60 gui=bold ctermfg=white ctermbg=203 cterm
 hi ModeMsg guifg=black guibg=#C6C5FE gui=bold ctermfg=0 ctermbg=189 cterm=bold
 
 if version >= 700 " Vim 7.x specific colors
- "hi CursorLine guibg=#121212 gui=none ctermbg=234 cterm=none
  hi CursorLine guibg=#302818 gui=none ctermbg=234 cterm=none
  hi ColorColumn guibg=#2d2d2d ctermbg=234
 
@@ -140,9 +135,7 @@ hi link Debug Special
 "hi link rubyClassVariable Identifier
 "hi link rubyConstant Type
 
-"————————————————————————————————————————————————————————————————————————————————————————————————————————————————————"
 " Ruby related colors
-"————————————————————————————————————————————————————————————————————————————————————————————————————————————————————"
 hi rubySymbol           guifg=#AE81FF   gui=italic  ctermfg=99
 hi rubyClass            guifg=#FD971F   gui=italic  ctermfg=166
 hi rubyModule           guifg=white     gui=bold  ctermfg=15
@@ -198,7 +191,6 @@ hi DiffText         ctermfg=203             ctermbg=52             cterm=bold
 " Special txtList for txtBrowser.vim
 hi txtList         ctermfg=132             ctermbg=0             cterm=none
 
-"————————————————————————————————————————————————————————————————————————————————————————————————————————————————————"
 " CtrlP settings
 "    CtrlPNoEntries : the message when no match is found (Error)
 "    CtrlPMatch     : the matched pattern (Identifier)
@@ -206,7 +198,6 @@ hi txtList         ctermfg=132             ctermbg=0             cterm=none
 "    CtrlPPrtBase   : the prompt's base (Comment)
 "    CtrlPPrtText   : the prompt's text (|hl-Normal|)
 "    CtrlPPrtCursor : the prompt's cursor when moving over the text (Constant)
-"————————————————————————————————————————————————————————————————————————————————————————————————————————————————————"
 hi! link CtrlPNoEntries ErrorMsg
 hi! link CtrlPMatch     Number
 hi! link CtrlPLinePre   Comment
@@ -227,9 +218,7 @@ hi! link CtrlPMode1     StatusLine
 hi! link CtrlPMode2     StatusLine
 hi! link CtrlPStats     Function
 
-"———————————————————————————————————————————————————————————————————————————————
 " CSV colors
-"———————————————————————————————————————————————————————————————————————————————
 hi! link CSVColumnHeaderEven  Function
 hi! link CSVColumnHeaderOdd  Function
 hi CSVColumnOdd         ctermfg=132             ctermbg=0             cterm=none
@@ -242,9 +231,7 @@ hi def link markdownBold                  Keyword
 "hi def link markdownBoldItalic            htmlBoldItalic
 
 
-"———————————————————————————————————————————————————————————————————————————————
 " Notes
-"———————————————————————————————————————————————————————————————————————————————
 hi! link notesTitle Function
 hi! link notesShortHeading Keyword
 hi! link notesTodo Number
