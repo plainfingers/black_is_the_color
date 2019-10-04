@@ -238,3 +238,15 @@ hi! link notesTodo Number
 hi! link notesDoneItem Comment
 hi! link notesDoneMarker Comment
 hi! link notesAtxHeading String
+
+" js/es6/react
+hi jsArrowFunction           guifg=#AE81FF   gui=italic  ctermfg=99
+hi link jsxElement Normal
+hi link jsxTagName rubyConstant
+hi link jsxPunct Comment
+hi link jsxAttrib rubyInstanceVariable
+hi link jsxComponentName rubyConditional
+"hi link jsxTag Number
+"hi link jsxAttrib Number
+"hi link jsxEqual Number
+"hi link jsxString Number
